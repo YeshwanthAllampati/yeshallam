@@ -1,0 +1,51 @@
+<html>
+<body>
+<h1>WE READ YOUR MINDS</h1>
+<p>CHOOSE A NUMBER BETWEEN 0 AND 9</P>
+<button id='a3' onclick='whathap()'>NEXT</button>
+<script type='text/javascript'>
+function whathap()
+{
+document.writeln("<p>Now Multiply your number by 2</p>","<br/>","<button id='a4' onclick='trail1()'>NEXT</button>");
+}
+function trail1()
+{
+document.writeln("<p>Now ADD your number by 2</p>","<br/>","<button id='a5' onclick='trail2()'>NEXT</button>");
+}
+function trail2()
+{
+document.writeln("<p>Now Multiply your number by 5</p>","<br/>","<button id='a4' onclick='trail3()'>NEXT</button>");
+}
+function trail3()
+{
+document.writeln("<p>Now ADD your number by 5 </p>","<br/>","<button id='a5' onclick='trail4()'>NEXT</button>");
+}function trail4()
+{
+document.writeln("<p>Now Multiply your number by 10</p>","<br/>","<button id='a4' onclick='trail5()'>NEXT</button>");
+}
+function trail5()
+{
+document.writeln("<p>Now ADD your number by 10</p>","<br/>","<button id='a5' onclick='need()'>NEXT</button>");
+}
+function need()
+{
+document.write("Enter the result in HERE","</br>");
+document.write("<input id='a1' type='number'>");
+document.write("<button id='a2' onclick='need1()'>DONE</button>");
+}
+function need1()
+{
+var a=document.getElementById('a1').value.toString();
+document.write(a);
+if(a=="660")
+{
+document.write("<br/>The Number you chose is 5","<br/>","<br/>Haha! we read it!");
+}
+else{
+var b=a.split(6);
+document.write("<br/>The Number you chose is ",b[0]-1,"<br/>","<br/>Haha! we read it!");
+}
+}
+</script>
+</body>
+</html>
